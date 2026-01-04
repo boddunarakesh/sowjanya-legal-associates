@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Submit Feedback | Sowjanya Legal Associates</title>
+    <meta name="description"
+        content="Share your feedback and experience with Sowjanya Legal Associates. Your opinions help us serve you better." />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['Playfair Display', 'Georgia', 'serif'],
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#1e3a5f',
+                        'primary-dark': '#152d47',
+                        gold: '#c9a961',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+        }
+
+        .star-rating input {
+            display: none;
+        }
+
+        .star-rating label {
+            cursor: pointer;
+            color: #d1d5db;
+            transition: color 0.2s;
+        }
+
+        .star-rating label:hover,
+        .star-rating label:hover~label,
+        .star-rating input:checked~label {
+            color: #c9a961;
+        }
+
+        .star-rating {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: flex-end;
+        }
+    </style>
+</head>
+
+<body class="min-h-screen bg-white font-sans">
+
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm shadow-sm z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="index.html" class="flex items-center space-x-3">
+                    <i data-lucide="scale" class="h-8 w-8 text-primary"></i>
+                    <div>
+                        <h1 class="text-xl font-serif font-bold text-primary">Sowjanya Legal Associates</h1>
+                        <p class="text-xs text-gray-600">Advocate Sowjanya</p>
+                    </div>
+                </a>
+
+                <!-- Desktop Nav -->
+                <nav class="hidden md:flex items-center space-x-6">
+                    <a href="index.html" class="text-gray-700 hover:text-primary transition font-medium">Home</a>
+                    <a href="index.html#services"
+                        class="text-gray-700 hover:text-primary transition font-medium">Services</a>
+                    <a href="blog.html" class="text-gray-700 hover:text-primary transition font-medium">Blog</a>
+                    <a href="feedback.html" class="text-primary font-medium">Feedback</a>
+                    <a href="index.html#contact"
+                        class="text-gray-700 hover:text-primary transition font-medium">Contact</a>
+
+                    <!-- Language Switcher -->
+                    <div class="relative group">
+                        <button class="flex items-center gap-1 text-gray-700 hover:text-primary transition font-medium">
+                            <i data-lucide="globe" class="h-4 w-4"></i>
+                            EN
+                            <i data-lucide="chevron-down" class="h-4 w-4"></i>
+                        </button>
+                        <div
+                            class="absolute right-0 mt-2 w-32 bg-white rounded-lg shadow-lg border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
+                            <a href="feedback.html"
+                                class="block px-4 py-2 text-sm text-primary font-medium bg-gray-50">English</a>
+                            <a href="feedback-te.html"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">తెలుగు</a>
+                            <a href="feedback-hi.html"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">हिंदी</a>
+                        </div>
+                    </div>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden p-2 text-gray-700" aria-label="Toggle menu">
+                    <i data-lucide="menu" class="h-6 w-6"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Nav -->
+            <nav id="mobile-menu" class="hidden md:hidden pb-4 space-y-2">
+                <a href="index.html" class="block py-2 text-gray-700 hover:text-primary transition font-medium">Home</a>
+                <a href="index.html#services"
+                    class="block py-2 text-gray-700 hover:text-primary transition font-medium">Services</a>
+                <a href="blog.html" class="block py-2 text-gray-700 hover:text-primary transition font-medium">Blog</a>
+                <a href="feedback.html" class="block py-2 text-primary font-medium">Feedback</a>
+                <a href="index.html#contact"
+                    class="block py-2 text-gray-700 hover:text-primary transition font-medium">Contact</a>
+                <div class="flex gap-2 pt-2 border-t border-gray-200">
+                    <a href="feedback.html" class="px-3 py-1 bg-primary text-white rounded text-sm">EN</a>
+                    <a href="feedback-te.html" class="px-3 py-1 bg-gray-100 text-gray-700 rounded text-sm">తెలుగు</a>
+                    <a href="feedback-hi.html" class="px-3 py-1 bg-gray-100 text-gray-700 rounded text-sm">हिंदी</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-16 bg-gradient-to-br from-white via-gray-50 to-blue-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-5xl font-serif font-bold text-primary mb-4">Share Your Feedback</h1>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                Your feedback helps us improve our services. We value your opinion and strive to provide the best legal
+                assistance.
+            </p>
+        </div>
+    </section>
+
+    <!-- Feedback Form Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="grid md:grid-cols-2 gap-12">
+
+                <!-- Feedback Form -->
+                <div class="bg-white p-8 rounded-2xl shadow-xl border border-gray-100">
+                    <h2 class="text-2xl font-serif font-bold text-primary mb-6 flex items-center gap-2">
+                        <i data-lucide="message-square" class="h-6 w-6"></i>
+                        Submit Your Feedback
+                    </h2>
+
+                    <form id="feedback-form" class="space-y-5">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Your Name *</label>
+                            <input type="text" id="name" name="name" required
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition"
+                                placeholder="Enter your name" />
+                        </div>
+
+                        <div>
+                            <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>
+                            <input type="tel" id="phone" name="phone"
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition"
+                                placeholder="Your phone number (optional)" />
+                        </div>
+
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email
+                                Address</label>
+                            <input type="email" id="email" name="email"
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition"
+                                placeholder="your@email.com (optional)" />
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Rate Your Experience *</label>
+                            <div class="star-rating text-3xl" id="star-container">
+                                <input type="radio" id="star5" name="rating" value="5" required />
+                                <label for="star5" title="5 stars"><i data-lucide="star"
+                                        class="h-8 w-8 fill-current"></i></label>
+                                <input type="radio" id="star4" name="rating" value="4" />
+                                <label for="star4" title="4 stars"><i data-lucide="star"
+                                        class="h-8 w-8 fill-current"></i></label>
+                                <input type="radio" id="star3" name="rating" value="3" />
+                                <label for="star3" title="3 stars"><i data-lucide="star"
+                                        class="h-8 w-8 fill-current"></i></label>
+                                <input type="radio" id="star2" name="rating" value="2" />
+                                <label for="star2" title="2 stars"><i data-lucide="star"
+                                        class="h-8 w-8 fill-current"></i></label>
+                                <input type="radio" id="star1" name="rating" value="1" />
+                                <label for="star1" title="1 star"><i data-lucide="star"
+                                        class="h-8 w-8 fill-current"></i></label>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="service" class="block text-sm font-medium text-gray-700 mb-1">Service Used
+                                *</label>
+                            <select id="service" name="service" required
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition">
+                                <option value="">Select a service</option>
+                                <option value="Consumer Disputes">Consumer Disputes</option>
+                                <option value="Civil Law">Civil Law</option>
+                                <option value="Family Law">Family & Matrimonial Matters</option>
+                                <option value="Property Law">Property & Real Estate Law</option>
+                                <option value="Legal Documentation">Legal Documentation</option>
+                                <option value="Legal Consultation">Legal Consultation</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="feedback" class="block text-sm font-medium text-gray-700 mb-1">Your Feedback
+                                *</label>
+                            <textarea id="feedback" name="feedback" required rows="4"
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition resize-none"
+                                placeholder="Share your experience with us..."></textarea>
+                        </div>
+
+                        <div class="flex items-start gap-2">
+                            <input type="checkbox" id="permission" name="permission" class="mt-1" />
+                            <label for="permission" class="text-sm text-gray-600">
+                                I give permission to display my feedback (anonymously) on the website.
+                            </label>
+                        </div>
+
+                        <button type="submit"
+                            class="w-full bg-gradient-to-r from-primary to-primary-dark text-white py-4 rounded-lg hover:shadow-xl transition font-semibold flex items-center justify-center gap-2">
+                            <i data-lucide="send" class="h-5 w-5"></i>
+                            Submit Feedback via WhatsApp
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Why Feedback Matters -->
+                <div class="space-y-8">
+                    <div class="bg-gradient-to-br from-gray-50 to-blue-50 p-8 rounded-2xl border border-gray-100">
+                        <h2 class="text-2xl font-serif font-bold text-primary mb-6">Why Your Feedback Matters</h2>
+
+                        <div class="space-y-6">
+                            <div class="flex items-start gap-4">
+                                <div
+                                    class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <i data-lucide="trending-up" class="h-6 w-6 text-primary"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold text-primary mb-1">Improve Our Services</h3>
+                                    <p class="text-gray-600 text-sm">Your insights help us enhance our legal services
+                                        and client experience.</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-4">
+                                <div
+                                    class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <i data-lucide="users" class="h-6 w-6 text-primary"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold text-primary mb-1">Help Others</h3>
+                                    <p class="text-gray-600 text-sm">Your testimonial can guide others seeking legal
+                                        assistance.</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-4">
+                                <div
+                                    class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <i data-lucide="heart" class="h-6 w-6 text-primary"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold text-primary mb-1">Build Trust</h3>
+                                    <p class="text-gray-600 text-sm">Honest feedback strengthens the trust in our legal
+                                        practice.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Card -->
+                    <div class="bg-gradient-to-r from-primary to-primary-dark text-white p-8 rounded-2xl">
+                        <h3 class="text-xl font-serif font-bold mb-4">Have a Concern?</h3>
+                        <p class="text-gray-200 mb-6">
+                            If you have any concerns or complaints, please contact us directly. We take every feedback
+                            seriously.
+                        </p>
+                        <a href="tel:+916281074891"
+                            class="inline-flex items-center gap-2 bg-white text-primary px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
+                            <i data-lucide="phone" class="h-5 w-5"></i>
+                            Call Us Now
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Recent Testimonials -->
+    <section class="py-16 bg-gradient-to-br from-gray-50 to-blue-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-serif font-bold text-primary mb-4">What Others Are Saying</h2>
+                <p class="text-gray-600">Read feedback from our valued clients</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <div class="flex text-gold mb-3">
+                        <i data-lucide="star" class="h-5 w-5 fill-current"></i>
+                        <i data-lucide="star" class="h-5 w-5 fill-current"></i>
+                        <i data-lucide="star" class="h-5 w-5 fill-current"></i>
+                        <i data-lucide="star" class="h-5 w-5 fill-current"></i>
+                        <i data-lucide="star" class="h-5 w-5 fill-current"></i>
+                    </div>
+                    <p class="text-gray-700 italic mb-4">"Excellent service! Sowjanya ma'am handled my consumer case
+                        with great professionalism."</p>
+                    <p class="text-primary font-semibold text-sm">— Client, Hyderabad</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <div class="flex text-gold mb-3">
+                        <i data-lucide="star" class="h-5 w-5 fill-current"></i>
+                        <i data-lucide="star" class="h-5 w-5 fill-current"></i>
+                        <i data-lucide="star" class="h-5 w-5 fill-current"></i>
+                        <i data-lucide="star" class="h-5 w-5 fill-current"></i>
+                        <i data-lucide="star" class="h-5 w-5 fill-current"></i>
+                    </div>
+                    <p class="text-gray-700 italic mb-4">"Very helpful and understanding. Made the legal process easy to
+                        understand."</p>
+                    <p class="text-primary font-semibold text-sm">— Client, Mancherial</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <div class="flex text-gold mb-3">
+                        <i data-lucide="star" class="h-5 w-5 fill-current"></i>
+                        <i data-lucide="star" class="h-5 w-5 fill-current"></i>
+                        <i data-lucide="star" class="h-5 w-5 fill-current"></i>
+                        <i data-lucide="star" class="h-5 w-5 fill-current"></i>
+                        <i data-lucide="star" class="h-5 w-5 fill-current"></i>
+                    </div>
+                    <p class="text-gray-700 italic mb-4">"Prompt response and clear communication throughout my property
+                        case."</p>
+                    <p class="text-primary font-semibold text-sm">— Client, Khammam</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-r from-primary to-primary-dark text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                <div class="flex items-center space-x-3">
+                    <i data-lucide="scale" class="h-8 w-8"></i>
+                    <div>
+                        <h3 class="text-xl font-serif font-bold">Sowjanya Legal Advisors</h3>
+                        <p class="text-sm text-gray-300">Advocate Sowjanya</p>
+                    </div>
+                </div>
+                <div class="flex gap-6 text-gray-300">
+                    <a href="index.html" class="hover:text-white transition">Home</a>
+                    <a href="blog.html" class="hover:text-white transition">Blog</a>
+                    <a href="feedback.html" class="hover:text-white transition">Feedback</a>
+                    <a href="index.html#contact" class="hover:text-white transition">Contact</a>
+                </div>
+            </div>
+            <div class="border-t border-white/20 mt-8 pt-8 text-center">
+                <p class="text-sm text-gray-300">© 2025 Sowjanya Legal Advisors. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/916281074891?text=Hello%2C%20I%20would%20like%20to%20consult%20about%20a%20legal%20matter."
+        target="_blank" rel="noopener"
+        class="fixed bottom-6 right-6 z-50 w-16 h-16 bg-[#25D366] rounded-full flex items-center justify-center shadow-lg hover:shadow-2xl transition-all"
+        aria-label="Chat on WhatsApp">
+        <svg class="h-8 w-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+            <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+        </svg>
+    </a>
+
+    <!-- JavaScript -->
+    <script>
+        lucide.createIcons();
+
+        // Mobile menu
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+        });
+
+        // Feedback Form Submission
+        const feedbackForm = document.getElementById('feedback-form');
+        feedbackForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value || 'Not provided';
+            const email = document.getElementById('email').value || 'Not provided';
+            const rating = document.querySelector('input[name="rating"]:checked')?.value || 'Not rated';
+            const service = document.getElementById('service').value;
+            const feedback = document.getElementById('feedback').value;
+            const permission = document.getElementById('permission').checked ? 'Yes' : 'No';
+
+            const message = `📝 *NEW FEEDBACK*%0A%0A👤 Name: ${encodeURIComponent(name)}%0A📞 Phone: ${encodeURIComponent(phone)}%0A📧 Email: ${encodeURIComponent(email)}%0A⭐ Rating: ${rating}/5 stars%0A🏷️ Service: ${encodeURIComponent(service)}%0A📝 Feedback: ${encodeURIComponent(feedback)}%0A✅ Display Permission: ${permission}`;
+
+            window.open(`https://wa.me/916281074891?text=${message}`, '_blank');
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Legal Articles & Blog | Sowjanya Legal Associates</title>
+    <meta name="description"
+        content="Read informative legal articles on Consumer Rights, Property Law, Family Law, and more. Stay informed with Sowjanya Legal Associates." />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Legal Articles & Blog | Sowjanya Legal Associates" />
+    <meta property="og:description"
+        content="Read informative legal articles on Consumer Rights, Property Law, Family Law, and more." />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['Playfair Display', 'Georgia', 'serif'],
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#1e3a5f',
+                        'primary-dark': '#152d47',
+                        gold: '#c9a961',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+        }
+    </style>
+</head>
+
+<body class="min-h-screen bg-white font-sans">
+
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm shadow-sm z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="index.html" class="flex items-center space-x-3">
+                    <i data-lucide="scale" class="h-8 w-8 text-primary"></i>
+                    <div>
+                        <h1 class="text-xl font-serif font-bold text-primary">Sowjanya Legal Associates</h1>
+                        <p class="text-xs text-gray-600">Advocate Sowjanya</p>
+                    </div>
+                </a>
+
+                <!-- Desktop Nav -->
+                <nav class="hidden md:flex items-center space-x-6">
+                    <a href="index.html" class="text-gray-700 hover:text-primary transition font-medium">Home</a>
+                    <a href="index.html#services"
+                        class="text-gray-700 hover:text-primary transition font-medium">Services</a>
+                    <a href="blog.html" class="text-primary font-medium">Blog</a>
+                    <a href="feedback.html" class="text-gray-700 hover:text-primary transition font-medium">Feedback</a>
+                    <a href="index.html#contact"
+                        class="text-gray-700 hover:text-primary transition font-medium">Contact</a>
+
+                    <!-- Language Switcher -->
+                    <div class="relative group">
+                        <button class="flex items-center gap-1 text-gray-700 hover:text-primary transition font-medium">
+                            <i data-lucide="globe" class="h-4 w-4"></i>
+                            EN
+                            <i data-lucide="chevron-down" class="h-4 w-4"></i>
+                        </button>
+                        <div
+                            class="absolute right-0 mt-2 w-32 bg-white rounded-lg shadow-lg border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
+                            <a href="blog.html"
+                                class="block px-4 py-2 text-sm text-primary font-medium bg-gray-50">English</a>
+                            <a href="blog-te.html"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">తెలుగు</a>
+                            <a href="blog-hi.html"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">हिंदी</a>
+                        </div>
+                    </div>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden p-2 text-gray-700" aria-label="Toggle menu">
+                    <i data-lucide="menu" class="h-6 w-6"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Nav -->
+            <nav id="mobile-menu" class="hidden md:hidden pb-4 space-y-2">
+                <a href="index.html" class="block py-2 text-gray-700 hover:text-primary transition font-medium">Home</a>
+                <a href="index.html#services"
+                    class="block py-2 text-gray-700 hover:text-primary transition font-medium">Services</a>
+                <a href="blog.html" class="block py-2 text-primary font-medium">Blog</a>
+                <a href="feedback.html"
+                    class="block py-2 text-gray-700 hover:text-primary transition font-medium">Feedback</a>
+                <a href="index.html#contact"
+                    class="block py-2 text-gray-700 hover:text-primary transition font-medium">Contact</a>
+                <div class="flex gap-2 pt-2 border-t border-gray-200">
+                    <a href="blog.html" class="px-3 py-1 bg-primary text-white rounded text-sm">EN</a>
+                    <a href="blog-te.html" class="px-3 py-1 bg-gray-100 text-gray-700 rounded text-sm">తెలుగు</a>
+                    <a href="blog-hi.html" class="px-3 py-1 bg-gray-100 text-gray-700 rounded text-sm">हिंदी</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-16 bg-gradient-to-br from-white via-gray-50 to-blue-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-5xl font-serif font-bold text-primary mb-4">Legal Articles & Insights</h1>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                Stay informed with our latest articles on consumer rights, property law, family matters, and more.
+            </p>
+        </div>
+    </section>
+
+    <!-- Blog Articles -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <!-- Featured Article -->
+            <div class="mb-16">
+                <h2 class="text-2xl font-serif font-bold text-primary mb-8 flex items-center gap-2">
+                    <i data-lucide="star" class="h-6 w-6 text-gold"></i>
+                    Featured Article
+                </h2>
+                <article
+                    class="bg-gradient-to-br from-primary to-primary-dark text-white rounded-2xl overflow-hidden shadow-xl">
+                    <div class="p-8 md:p-12">
+                        <span
+                            class="inline-block bg-gold/20 text-gold px-3 py-1 rounded-full text-sm font-medium mb-4">Consumer
+                            Rights</span>
+                        <h3 class="text-3xl font-serif font-bold mb-4">Understanding Your Rights Under the Consumer
+                            Protection Act, 2019</h3>
+                        <p class="text-gray-200 mb-6 text-lg leading-relaxed">
+                            The Consumer Protection Act, 2019 has significantly strengthened consumer rights in India.
+                            Learn about the key protections available to you, how to file complaints, and what remedies
+                            you can seek for defective products or deficient services.
+                        </p>
+                        <div class="flex items-center gap-4 text-gray-300 text-sm mb-6">
+                            <span class="flex items-center gap-1"><i data-lucide="calendar" class="h-4 w-4"></i> January
+                                2, 2025</span>
+                            <span class="flex items-center gap-1"><i data-lucide="clock" class="h-4 w-4"></i> 8 min
+                                read</span>
+                        </div>
+                        <a href="#article-1"
+                            class="inline-flex items-center gap-2 bg-white text-primary px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
+                            Read Full Article <i data-lucide="arrow-right" class="h-4 w-4"></i>
+                        </a>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Article Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Article 1 -->
+                <article
+                    class="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 overflow-hidden group">
+                    <div class="h-48 bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center">
+                        <i data-lucide="home" class="h-16 w-16 text-primary/40"></i>
+                    </div>
+                    <div class="p-6">
+                        <span
+                            class="inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs font-medium mb-3">Property
+                            Law</span>
+                        <h3 class="text-xl font-semibold text-primary mb-3 group-hover:text-primary-dark transition">
+                            Essential Documents for Property Purchase in Telangana</h3>
+                        <p class="text-gray-600 text-sm mb-4 line-clamp-3">
+                            Before purchasing any property, ensure you verify these essential documents: Title Deed,
+                            Encumbrance Certificate, Property Tax Receipts, and more...
+                        </p>
+                        <div class="flex items-center justify-between text-sm text-gray-500">
+                            <span>December 28, 2024</span>
+                            <span>5 min read</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 2 -->
+                <article
+                    class="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 overflow-hidden group">
+                    <div class="h-48 bg-gradient-to-br from-pink-100 to-pink-200 flex items-center justify-center">
+                        <i data-lucide="users" class="h-16 w-16 text-primary/40"></i>
+                    </div>
+                    <div class="p-6">
+                        <span
+                            class="inline-block bg-pink-100 text-pink-800 px-3 py-1 rounded-full text-xs font-medium mb-3">Family
+                            Law</span>
+                        <h3 class="text-xl font-semibold text-primary mb-3 group-hover:text-primary-dark transition">
+                            Mutual Consent Divorce: Process and Timeline in India</h3>
+                        <p class="text-gray-600 text-sm mb-4 line-clamp-3">
+                            A mutual consent divorce is the most amicable way to end a marriage. Learn about the legal
+                            requirements, cooling-off period, and what documents you need...
+                        </p>
+                        <div class="flex items-center justify-between text-sm text-gray-500">
+                            <span>December 20, 2024</span>
+                            <span>6 min read</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 3 -->
+                <article
+                    class="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 overflow-hidden group">
+                    <div class="h-48 bg-gradient-to-br from-green-100 to-green-200 flex items-center justify-center">
+                        <i data-lucide="shopping-cart" class="h-16 w-16 text-primary/40"></i>
+                    </div>
+                    <div class="p-6">
+                        <span
+                            class="inline-block bg-green-100 text-green-800 px-3 py-1 rounded-full text-xs font-medium mb-3">Consumer
+                            Rights</span>
+                        <h3 class="text-xl font-semibold text-primary mb-3 group-hover:text-primary-dark transition">How
+                            to File a Consumer Complaint: Step-by-Step Guide</h3>
+                        <p class="text-gray-600 text-sm mb-4 line-clamp-3">
+                            Filing a consumer complaint is your right. This guide walks you through the entire process
+                            from drafting the complaint to appearing before the forum...
+                        </p>
+                        <div class="flex items-center justify-between text-sm text-gray-500">
+                            <span>December 15, 2024</span>
+                            <span>7 min read</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 4 -->
+                <article
+                    class="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 overflow-hidden group">
+                    <div class="h-48 bg-gradient-to-br from-yellow-100 to-yellow-200 flex items-center justify-center">
+                        <i data-lucide="file-text" class="h-16 w-16 text-primary/40"></i>
+                    </div>
+                    <div class="p-6">
+                        <span
+                            class="inline-block bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-xs font-medium mb-3">Legal
+                            Documents</span>
+                        <h3 class="text-xl font-semibold text-primary mb-3 group-hover:text-primary-dark transition">
+                            Power of Attorney: Types and When You Need One</h3>
+                        <p class="text-gray-600 text-sm mb-4 line-clamp-3">
+                            A Power of Attorney allows someone to act on your behalf in legal matters. Understand the
+                            difference between General and Special POA...
+                        </p>
+                        <div class="flex items-center justify-between text-sm text-gray-500">
+                            <span>December 10, 2024</span>
+                            <span>4 min read</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 5 -->
+                <article
+                    class="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 overflow-hidden group">
+                    <div class="h-48 bg-gradient-to-br from-purple-100 to-purple-200 flex items-center justify-center">
+                        <i data-lucide="scale" class="h-16 w-16 text-primary/40"></i>
+                    </div>
+                    <div class="p-6">
+                        <span
+                            class="inline-block bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-xs font-medium mb-3">Civil
+                            Law</span>
+                        <h3 class="text-xl font-semibold text-primary mb-3 group-hover:text-primary-dark transition">
+                            Understanding Civil Suits: When Should You File One?</h3>
+                        <p class="text-gray-600 text-sm mb-4 line-clamp-3">
+                            Civil disputes can range from property issues to breach of contract. Learn when a civil suit
+                            is appropriate and what to expect from the process...
+                        </p>
+                        <div class="flex items-center justify-between text-sm text-gray-500">
+                            <span>December 5, 2024</span>
+                            <span>5 min read</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 6 -->
+                <article
+                    class="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 overflow-hidden group">
+                    <div class="h-48 bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center">
+                        <i data-lucide="shield" class="h-16 w-16 text-primary/40"></i>
+                    </div>
+                    <div class="p-6">
+                        <span
+                            class="inline-block bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-xs font-medium mb-3">Legal
+                            Awareness</span>
+                        <h3 class="text-xl font-semibold text-primary mb-3 group-hover:text-primary-dark transition">
+                            Know Your Rights: Legal Remedies for Online Fraud</h3>
+                        <p class="text-gray-600 text-sm mb-4 line-clamp-3">
+                            Online fraud is increasing rapidly. Know your legal options if you've been a victim of cyber
+                            fraud, including how to file an FIR and seek compensation...
+                        </p>
+                        <div class="flex items-center justify-between text-sm text-gray-500">
+                            <span>November 28, 2024</span>
+                            <span>6 min read</span>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+            <!-- Newsletter Signup -->
+            <div
+                class="mt-16 bg-gradient-to-r from-primary to-primary-dark rounded-2xl p-8 md:p-12 text-center text-white">
+                <h2 class="text-2xl md:text-3xl font-serif font-bold mb-4">Stay Updated on Legal Matters</h2>
+                <p class="text-gray-200 mb-6 max-w-xl mx-auto">
+                    Subscribe to receive our latest legal articles and updates directly via WhatsApp.
+                </p>
+                <a href="https://wa.me/916281074891?text=Hello%2C%20I%20would%20like%20to%20subscribe%20to%20your%20legal%20updates%20newsletter."
+                    target="_blank" rel="noopener"
+                    class="inline-flex items-center gap-2 bg-white text-primary px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition">
+                    <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                    </svg>
+                    Subscribe via WhatsApp
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-r from-primary to-primary-dark text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                <div class="flex items-center space-x-3">
+                    <i data-lucide="scale" class="h-8 w-8"></i>
+                    <div>
+                        <h3 class="text-xl font-serif font-bold">Sowjanya Legal Advisors</h3>
+                        <p class="text-sm text-gray-300">Advocate Sowjanya</p>
+                    </div>
+                </div>
+                <div class="flex gap-6 text-gray-300">
+                    <a href="index.html" class="hover:text-white transition">Home</a>
+                    <a href="blog.html" class="hover:text-white transition">Blog</a>
+                    <a href="feedback.html" class="hover:text-white transition">Feedback</a>
+                    <a href="index.html#contact" class="hover:text-white transition">Contact</a>
+                </div>
+            </div>
+            <div class="border-t border-white/20 mt-8 pt-8 text-center">
+                <p class="text-sm text-gray-300">© 2025 Sowjanya Legal Advisors. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/916281074891?text=Hello%2C%20I%20would%20like%20to%20consult%20about%20a%20legal%20matter."
+        target="_blank" rel="noopener"
+        class="fixed bottom-6 right-6 z-50 w-16 h-16 bg-[#25D366] rounded-full flex items-center justify-center shadow-lg hover:shadow-2xl transition-all"
+        aria-label="Chat on WhatsApp">
+        <svg class="h-8 w-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+            <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+        </svg>
+    </a>
+
+    <!-- JavaScript -->
+    <script>
+        lucide.createIcons();
+
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+        });
+    </script>
+
+</body>
+
+</html>

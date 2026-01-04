@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="te">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>సౌజన్య లీగల్ అసోసియేట్స్ | న్యాయవాది సౌజన్య</title>
+    <meta name="description"
+        content="సౌజన్య లీగల్ అడ్వైజర్స్ - స్పష్టత, సానుభూతి మరియు ఆత్మవిశ్వాసంతో అందించే నమ్మకమైన న్యాయ సలహా. వినియోగదారు వివాదాలు, సివిల్ లా, కుటుంబ వ్యవహారాలు మరియు ఆస్తి చట్టంలో ప్రత్యేకత." />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;600;700&family=Noto+Sans+Telugu:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['Playfair Display', 'Georgia', 'serif'],
+                        sans: ['Noto Sans Telugu', 'Inter', 'system-ui', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#1e3a5f',
+                        'primary-dark': '#152d47',
+                        gold: '#c9a961',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Noto Sans Telugu', 'Inter', system-ui, sans-serif;
+        }
+
+        .stat-number {
+            background: linear-gradient(135deg, #c9a961 0%, #e8d5a3 50%, #c9a961 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+    </style>
+</head>
+
+<body class="min-h-screen bg-white font-sans">
+
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm shadow-sm z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="index-te.html" class="flex items-center space-x-3">
+                    <i data-lucide="scale" class="h-8 w-8 text-primary"></i>
+                    <div>
+                        <h1 class="text-xl font-bold text-primary">సౌజన్య లీగల్ అసోసియేట్స్</h1>
+                        <p class="text-xs text-gray-600">న్యాయవాది సౌజన్య</p>
+                    </div>
+                </a>
+
+                <!-- Desktop Nav -->
+                <nav class="hidden md:flex items-center space-x-6">
+                    <a href="#home" class="text-gray-700 hover:text-primary transition font-medium">హోమ్</a>
+                    <a href="#about" class="text-gray-700 hover:text-primary transition font-medium">గురించి</a>
+                    <a href="#services" class="text-gray-700 hover:text-primary transition font-medium">సేవలు</a>
+                    <a href="#contact" class="text-gray-700 hover:text-primary transition font-medium">సంప్రదించండి</a>
+                    <a href="blog-te.html" class="text-gray-700 hover:text-primary transition font-medium">బ్లాగ్</a>
+
+                    <!-- Language Switcher -->
+                    <div class="relative group">
+                        <button class="flex items-center gap-1 text-gray-700 hover:text-primary transition font-medium">
+                            <i data-lucide="globe" class="h-4 w-4"></i>
+                            తెలుగు
+                            <i data-lucide="chevron-down" class="h-4 w-4"></i>
+                        </button>
+                        <div
+                            class="absolute right-0 mt-2 w-32 bg-white rounded-lg shadow-lg border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
+                            <a href="index.html"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">English</a>
+                            <a href="index-te.html"
+                                class="block px-4 py-2 text-sm text-primary font-medium bg-gray-50">తెలుగు</a>
+                            <a href="index-hi.html"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">हिंदी</a>
+                        </div>
+                    </div>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden p-2 text-gray-700">
+                    <i data-lucide="menu" class="h-6 w-6"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Nav -->
+            <nav id="mobile-menu" class="hidden md:hidden pb-4 space-y-2">
+                <a href="#home" class="block py-2 text-gray-700 hover:text-primary transition font-medium">హోమ్</a>
+                <a href="#about" class="block py-2 text-gray-700 hover:text-primary transition font-medium">గురించి</a>
+                <a href="#services" class="block py-2 text-gray-700 hover:text-primary transition font-medium">సేవలు</a>
+                <a href="#contact"
+                    class="block py-2 text-gray-700 hover:text-primary transition font-medium">సంప్రదించండి</a>
+                <div class="flex gap-2 pt-2 border-t border-gray-200">
+                    <a href="index.html" class="px-3 py-1 bg-gray-100 text-gray-700 rounded text-sm">EN</a>
+                    <a href="index-te.html" class="px-3 py-1 bg-primary text-white rounded text-sm">తెలుగు</a>
+                    <a href="index-hi.html" class="px-3 py-1 bg-gray-100 text-gray-700 rounded text-sm">हिंदी</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-20 bg-gradient-to-br from-white via-gray-50 to-blue-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <!-- Free Consultation Badge -->
+                    <div
+                        class="inline-flex items-center gap-2 bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-medium">
+                        <i data-lucide="check-circle" class="h-4 w-4"></i>
+                        ఉచిత ప్రారంభ సంప్రదింపు అందుబాటులో ఉంది
+                    </div>
+
+                    <h1 class="text-4xl md:text-5xl font-bold text-primary leading-tight">
+                        న్యాయానికి అంకితం.<br />నిజాయితీతో మార్గదర్శకత్వం.
+                    </h1>
+                    <p class="text-xl text-gray-600">
+                        మీరు నమ్మగల న్యాయ సలహా — స్పష్టత, సానుభూతి మరియు ఆత్మవిశ్వాసంతో అందించబడుతుంది.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed">
+                        <span class="font-semibold">సౌజన్య లీగల్ అడ్వైజర్స్</span>కు స్వాగతం, న్యాయవాది సౌజన్య యొక్క
+                        ప్రాక్టీస్,
+                        వ్యక్తులు మరియు వ్యాపారాలకు ఆచరణాత్మక మరియు నైతిక న్యాయ పరిష్కారాలను అందించే అంకితభావం కలిగిన
+                        న్యాయ నిపుణురాలు.
+                    </p>
+                    <div class="flex flex-wrap gap-4 pt-4">
+                        <a href="#contact"
+                            class="bg-primary text-white px-8 py-3 rounded-md hover:bg-primary-dark transition flex items-center gap-2 shadow-lg">
+                            <i data-lucide="message-circle" class="h-5 w-5"></i>
+                            సంప్రదింపు బుక్ చేయండి
+                        </a>
+                        <a href="tel:+916281074891"
+                            class="border-2 border-primary text-primary px-8 py-3 rounded-md hover:bg-primary hover:text-white transition flex items-center gap-2">
+                            <i data-lucide="phone" class="h-5 w-5"></i>
+                            ఇప్పుడు కాల్ చేయండి
+                        </a>
+                    </div>
+                </div>
+
+                <div class="flex justify-center">
+                    <div class="relative">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-br from-primary to-primary-dark rounded-lg transform rotate-3">
+                        </div>
+                        <img src="assets/IMG-20250915-WA0015.jpg" alt="న్యాయవాది సౌజన్య"
+                            class="relative rounded-lg shadow-2xl w-full max-w-md object-cover"
+                            style="aspect-ratio: 3/4;" />
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stats Section -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16 pt-8 border-t border-gray-200">
+                <div class="text-center">
+                    <p class="text-4xl font-bold stat-number">100+</p>
+                    <p class="text-gray-600 mt-1">కేసులు నిర్వహించబడ్డాయి</p>
+                </div>
+                <div class="text-center">
+                    <p class="text-4xl font-bold stat-number">5+</p>
+                    <p class="text-gray-600 mt-1">సంవత్సరాల అనుభవం</p>
+                </div>
+                <div class="text-center">
+                    <p class="text-4xl font-bold stat-number">95%</p>
+                    <p class="text-gray-600 mt-1">క్లయింట్ సంతృప్తి</p>
+                </div>
+                <div class="text-center">
+                    <p class="text-4xl font-bold stat-number">24గం</p>
+                    <p class="text-gray-600 mt-1">ప్రతిస్పందన సమయం</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-primary mb-4">న్యాయవాది సౌజన్య గురించి</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-primary to-gold mx-auto"></div>
+            </div>
+
+            <div class="max-w-4xl mx-auto space-y-6 text-gray-700 leading-relaxed">
+                <p class="text-lg">
+                    న్యాయవాది సౌజన్య న్యాయం, న్యాయబద్ధత మరియు క్లయింట్ సంక్షేమం పట్ల మక్కువ కలిగిన అర్హత కలిగిన న్యాయ
+                    అభ్యాసకురాలు.
+                    ప్రధానంగా <span class="font-semibold text-primary">వినియోగదారు వివాదాలు, సివిల్ మరియు ఆస్తి
+                        వ్యవహారాలు, కుటుంబ చట్టం మరియు న్యాయ డాక్యుమెంటేషన్</span>లో ప్రాక్టీస్ చేస్తూ, ప్రతి కేసుకు
+                    ఆలోచనాత్మక మరియు క్లయింట్-కేంద్రీకృత విధానాన్ని తీసుకువస్తుంది.
+                </p>
+
+                <div class="bg-gradient-to-r from-gray-50 to-blue-50 border-l-4 border-gold p-6 my-8 rounded-r-lg">
+                    <p class="text-lg italic text-gray-800">
+                        ఆమె తత్వశాస్త్రం సరళమైనది: <span class="font-semibold">జాగ్రత్తగా వినండి, లోతుగా అర్థం చేసుకోండి
+                            మరియు నిజాయితీతో పని చేయండి.</span>
+                    </p>
+                </div>
+
+                <div class="bg-gradient-to-r from-primary to-primary-dark text-white p-8 rounded-lg my-8 shadow-xl">
+                    <p class="text-xl text-center italic">
+                        "ప్రతి క్లయింట్ వినబడి నిజాయితీతో మార్గదర్శకత్వం పొందడానికి అర్హులు — కోర్టులో ప్రాతినిధ్యం
+                        వహించడమే కాకుండా, ప్రతి అడుగులో మద్దతు ఇవ్వబడాలి."
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-6 mt-12">
+                    <div
+                        class="text-center p-6 bg-gradient-to-br from-gray-50 to-blue-50 rounded-lg border border-gray-100">
+                        <i data-lucide="graduation-cap" class="h-12 w-12 text-primary mx-auto mb-4"></i>
+                        <h3 class="font-semibold text-lg mb-2 text-primary">విద్య</h3>
+                        <p class="text-gray-600">B.A. LL.B.</p>
+                    </div>
+                    <div
+                        class="text-center p-6 bg-gradient-to-br from-gray-50 to-blue-50 rounded-lg border border-gray-100">
+                        <i data-lucide="award" class="h-12 w-12 text-primary mx-auto mb-4"></i>
+                        <h3 class="font-semibold text-lg mb-2 text-primary">సభ్యత్వం</h3>
+                        <p class="text-gray-600">బార్ కౌన్సిల్ ఆఫ్ తెలంగాణ</p>
+                    </div>
+                    <div
+                        class="text-center p-6 bg-gradient-to-br from-gray-50 to-blue-50 rounded-lg border border-gray-100">
+                        <i data-lucide="scale" class="h-12 w-12 text-primary mx-auto mb-4"></i>
+                        <h3 class="font-semibold text-lg mb-2 text-primary">ప్రాక్టీస్</h3>
+                        <p class="text-gray-600">జిల్లా వినియోగదారు వివాదాల పరిష్కార కమిషన్</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-primary mb-4">ప్రాక్టీస్ రంగాలు</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-primary to-gold mx-auto mb-6"></div>
+                <p class="text-lg text-gray-700 max-w-3xl mx-auto">
+                    సౌజన్య లీగల్ అడ్వైజర్స్ వద్ద, వ్యక్తిగత మరియు కార్పొరేట్ అవసరాలకు అనుగుణంగా విస్తృత శ్రేణి న్యాయ
+                    సేవలను నిర్వహిస్తాము.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div
+                    class="bg-white p-8 rounded-xl shadow-md hover:shadow-2xl transition-all duration-300 border border-gray-100">
+                    <div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                        <i data-lucide="scale" class="h-8 w-8 text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-primary mb-3">సివిల్ లా</h3>
+                    <p class="text-gray-600 leading-relaxed">సివిల్ వివాదాలు, రికవరీ సూట్లు, ఇంజంక్షన్లు మరియు ఇతర
+                        సివిల్ వ్యవహారాలలో ప్రాతినిధ్యం మరియు న్యాయ సలహా.</p>
+                </div>
+                <div
+                    class="bg-white p-8 rounded-xl shadow-md hover:shadow-2xl transition-all duration-300 border border-gray-100">
+                    <div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                        <i data-lucide="shopping-cart" class="h-8 w-8 text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-primary mb-3">వినియోగదారు వివాదాలు</h3>
+                    <p class="text-gray-600 leading-relaxed">లోపభూయిష్ట వస్తువులు, అన్యాయమైన వాణిజ్య పద్ధతులు లేదా సేవా
+                        లోపాలకు సంబంధించిన వినియోగదారు ఫిర్యాదులను దాఖలు చేయడం మరియు రక్షించడం.</p>
+                </div>
+                <div
+                    class="bg-white p-8 rounded-xl shadow-md hover:shadow-2xl transition-all duration-300 border border-gray-100">
+                    <div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                        <i data-lucide="users" class="h-8 w-8 text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-primary mb-3">కుటుంబ & వైవాహిక వ్యవహారాలు</h3>
+                    <p class="text-gray-600 leading-relaxed">భరణం, విడాకులు, కస్టడీ మరియు పరస్పర పరిష్కారాలతో సహా కుటుంబ
+                        సంబంధిత కేసులలో సానుభూతిపూర్వక మార్గదర్శకత్వం.</p>
+                </div>
+                <div
+                    class="bg-white p-8 rounded-xl shadow-md hover:shadow-2xl transition-all duration-300 border border-gray-100">
+                    <div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                        <i data-lucide="home" class="h-8 w-8 text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-primary mb-3">ఆస్తి & రియల్ ఎస్టేట్ లా</h3>
+                    <p class="text-gray-600 leading-relaxed">ఆస్తి ధృవీకరణ, సేల్ డీడ్ డ్రాఫ్టింగ్, రిజిస్ట్రేషన్ మరియు
+                        టైటిల్ వివాదాలలో ఎండ్-టు-ఎండ్ న్యాయ సహాయం.</p>
+                </div>
+                <div
+                    class="bg-white p-8 rounded-xl shadow-md hover:shadow-2xl transition-all duration-300 border border-gray-100">
+                    <div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                        <i data-lucide="file-text" class="h-8 w-8 text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-primary mb-3">న్యాయ అభిప్రాయాలు & డాక్యుమెంటేషన్</h3>
+                    <p class="text-gray-600 leading-relaxed">ఒప్పందాలు, డీడ్‌లు, అఫిడవిట్‌లు మరియు ఇతర న్యాయ పత్రాలను
+                        డ్రాఫ్టింగ్, సమీక్షించడం మరియు నోటరైజ్ చేయడం.</p>
+                </div>
+                <div
+                    class="bg-white p-8 rounded-xl shadow-md hover:shadow-2xl transition-all duration-300 border border-gray-100">
+                    <div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                        <i data-lucide="message-square" class="h-8 w-8 text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-primary mb-3">న్యాయ సలహా & సంప్రదింపు</h3>
+                    <p class="text-gray-600 leading-relaxed">చర్య తీసుకోవడానికి ముందు క్లయింట్లు తమ న్యాయ స్థానం,
+                        హక్కులు మరియు ఎంపికలను అర్థం చేసుకోవడానికి వ్యక్తిగతీకరించిన సంప్రదింపులు.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-primary mb-4">సంప్రదించండి</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-primary to-gold mx-auto mb-6"></div>
+                <p class="text-lg text-gray-700 max-w-3xl mx-auto">
+                    న్యాయ ప్రశ్న ఉందా లేదా కేసుపై మార్గదర్శకత్వం అవసరమా? మేము సహాయం చేయడానికి ఇక్కడ ఉన్నాము.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12">
+                <div class="space-y-6">
+                    <div class="flex items-start space-x-4 p-4 bg-gradient-to-br from-gray-50 to-blue-50 rounded-xl">
+                        <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i data-lucide="map-pin" class="h-6 w-6 text-primary"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-lg text-primary mb-1">కార్యాలయం</h3>
+                            <p class="text-gray-600">తెలంగాణ అంతటా వ్యక్తిగతంగా & ఆన్‌లైన్ సంప్రదింపులకు అందుబాటులో ఉంది
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-4 p-4 bg-gradient-to-br from-gray-50 to-blue-50 rounded-xl">
+                        <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i data-lucide="mail" class="h-6 w-6 text-primary"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-lg text-primary mb-1">ఇమెయిల్</h3>
+                            <a href="mailto:2psowjanya@gmail.com" class="text-gray-600 hover:text-primary transition">
+                                2psowjanya@gmail.com
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-4 p-4 bg-gradient-to-br from-gray-50 to-blue-50 rounded-xl">
+                        <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i data-lucide="phone" class="h-6 w-6 text-primary"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-lg text-primary mb-1">ఫోన్ / వాట్సాప్</h3>
+                            <a href="tel:+916281074891" class="text-gray-600 hover:text-primary transition">
+                                +91 6281074891
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-4 p-4 bg-gradient-to-br from-gray-50 to-blue-50 rounded-xl">
+                        <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i data-lucide="clock" class="h-6 w-6 text-primary"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-lg text-primary mb-1">పని వేళలు</h3>
+                            <p class="text-gray-600">సోమవారం నుండి శనివారం, ఉదయం 10 – సాయంత్రం 6</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-100">
+                    <h3 class="text-xl font-semibold text-primary mb-6">మాకు సందేశం పంపండి</h3>
+                    <form id="contact-form" class="space-y-4">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700 mb-1">పేరు *</label>
+                            <input type="text" id="name" required
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary outline-none"
+                                placeholder="మీ పూర్తి పేరు" />
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">ఫోన్ *</label>
+                            <input type="tel" id="phone" required
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary outline-none"
+                                placeholder="మీ ఫోన్ నంబర్" />
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-1">సందేశం *</label>
+                            <textarea id="message" required rows="4"
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary outline-none resize-none"
+                                placeholder="మీ న్యాయ విషయాన్ని క్లుప్తంగా వివరించండి..."></textarea>
+                        </div>
+                        <button type="submit"
+                            class="w-full bg-gradient-to-r from-primary to-primary-dark text-white py-4 rounded-lg hover:shadow-xl transition font-semibold flex items-center justify-center gap-2">
+                            <i data-lucide="send" class="h-5 w-5"></i>
+                            వాట్సాప్ ద్వారా విచారణ పంపండి
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-r from-primary to-primary-dark text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                <div class="flex items-center space-x-3">
+                    <i data-lucide="scale" class="h-8 w-8"></i>
+                    <div>
+                        <h3 class="text-xl font-bold">సౌజన్య లీగల్ అడ్వైజర్స్</h3>
+                        <p class="text-sm text-gray-300">న్యాయవాది సౌజన్య</p>
+                    </div>
+                </div>
+                <div class="flex gap-6 text-gray-300">
+                    <a href="index.html" class="hover:text-white transition">English</a>
+                    <a href="index-hi.html" class="hover:text-white transition">हिंदी</a>
+                    <a href="feedback-te.html" class="hover:text-white transition">ఫీడ్‌బ్యాక్</a>
+                </div>
+            </div>
+            <div class="border-t border-white/20 mt-8 pt-8 text-center">
+                <p class="text-sm text-gray-300">© 2025 సౌజన్య లీగల్ అడ్వైజర్స్. అన్ని హక్కులు రిజర్వు చేయబడ్డాయి.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/916281074891?text=నమస్కారం%2C%20నేను%20న్యాయ%20విషయంలో%20సంప్రదించాలనుకుంటున్నాను."
+        target="_blank" rel="noopener"
+        class="fixed bottom-6 right-6 z-50 w-16 h-16 bg-[#25D366] rounded-full flex items-center justify-center shadow-lg hover:shadow-2xl transition-all"
+        aria-label="వాట్సాప్‌లో చాట్ చేయండి">
+        <svg class="h-8 w-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+            <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+        </svg>
+    </a>
+
+    <!-- JavaScript -->
+    <script>
+        lucide.createIcons();
+
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+        });
+
+        const contactForm = document.getElementById('contact-form');
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const message = document.getElementById('message').value;
+            const whatsappMessage = `నమస్కారం, నేను న్యాయ విషయంలో సంప్రదించాలనుకుంటున్నాను.%0A%0Aపేరు: ${encodeURIComponent(name)}%0Aఫోన్: ${encodeURIComponent(phone)}%0Aసందేశం: ${encodeURIComponent(message)}`;
+            window.open(`https://wa.me/916281074891?text=${whatsappMessage}`, '_blank');
+        });
+    </script>
+
+</body>
+
+</html>

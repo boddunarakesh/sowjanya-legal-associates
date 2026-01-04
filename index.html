@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sowjanya Legal Associates | Trusted Legal Advisors in Telangana</title>
+  <meta name="description"
+    content="Sowjanya Legal Advisors - Trusted legal advice delivered with clarity, compassion, and confidence. Specializing in Consumer Disputes, Civil Law, Family Matters, and Property Law in Hyderabad, Mancherial & Telangana." />
+  <meta name="keywords"
+    content="advocate, lawyer, legal advisor, consumer disputes, civil law, family law, property law, Hyderabad, Telangana, Mancherial, Khammam" />
+  <meta name="author" content="Advocate Sowjanya" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://sowjanyalegalassociates.com/" />
+  <meta property="og:title" content="Sowjanya Legal Associates | Trusted Legal Advisors" />
+  <meta property="og:description"
+    content="Committed to Justice. Guided by Integrity. Get trusted legal advice for Consumer Disputes, Civil Law, Family Matters & Property Law." />
+  <meta property="og:image" content="assets/IMG-20250915-WA0015.jpg" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://sowjanyalegalassociates.com/" />
+  <meta property="twitter:title" content="Sowjanya Legal Associates | Trusted Legal Advisors" />
+  <meta property="twitter:description"
+    content="Committed to Justice. Guided by Integrity. Get trusted legal advice for Consumer Disputes, Civil Law, Family Matters & Property Law." />
+  <meta property="twitter:image" content="assets/IMG-20250915-WA0015.jpg" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['Playfair Display', 'Georgia', 'serif'],
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          },
+          colors: {
+            primary: '#1e3a5f',
+            'primary-dark': '#152d47',
+            gold: '#c9a961',
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+    }
+
+    /* Page Load Animation */
+    .fade-in {
+      animation: fadeIn 0.6s ease-out forwards;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Staggered animations */
+    .fade-in-delay-1 {
+      animation-delay: 0.1s;
+      opacity: 0;
+    }
+
+    .fade-in-delay-2 {
+      animation-delay: 0.2s;
+      opacity: 0;
+    }
+
+    .fade-in-delay-3 {
+      animation-delay: 0.3s;
+      opacity: 0;
+    }
+
+    .fade-in-delay-4 {
+      animation-delay: 0.4s;
+      opacity: 0;
+    }
+
+    /* WhatsApp Button Animation */
+    .whatsapp-btn {
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+
+      0%,
+      100% {
+        transform: scale(1);
+        box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+      }
+
+      50% {
+        transform: scale(1.05);
+        box-shadow: 0 6px 30px rgba(37, 211, 102, 0.6);
+      }
+    }
+
+    /* Back to Top Button */
+    .back-to-top {
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s ease;
+    }
+
+    .back-to-top.visible {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    /* FAQ Accordion */
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-out;
+    }
+
+    .faq-answer.open {
+      max-height: 500px;
+    }
+
+    /* Stats Counter Animation */
+    .stat-number {
+      background: linear-gradient(135deg, #c9a961 0%, #e8d5a3 50%, #c9a961 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+  </style>
+</head>
+
+<body class="min-h-screen bg-white font-sans">
+
+  <!-- Header -->
+  <header class="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm shadow-sm z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <a href="#home" class="flex items-center space-x-3">
+          <i data-lucide="scale" class="h-8 w-8 text-primary"></i>
+          <div>
+            <h1 class="text-xl font-serif font-bold text-primary">Sowjanya Legal Associates</h1>
+            <p class="text-xs text-gray-600">Advocate Sowjanya</p>
+          </div>
+        </a>
+
+        <!-- Desktop Nav -->
+        <nav class="hidden md:flex items-center space-x-6">
+          <a href="#home" class="text-gray-700 hover:text-primary transition font-medium">Home</a>
+          <a href="#about" class="text-gray-700 hover:text-primary transition font-medium">About</a>
+          <a href="#services" class="text-gray-700 hover:text-primary transition font-medium">Practice Areas</a>
+          <a href="#faq" class="text-gray-700 hover:text-primary transition font-medium">FAQ</a>
+          <a href="blog.html" class="text-gray-700 hover:text-primary transition font-medium">Blog</a>
+          <a href="feedback.html" class="text-gray-700 hover:text-primary transition font-medium">Feedback</a>
+          <a href="#contact" class="text-gray-700 hover:text-primary transition font-medium">Contact</a>
+
+          <!-- Language Switcher -->
+          <div class="relative group">
+            <button class="flex items-center gap-1 text-gray-700 hover:text-primary transition font-medium">
+              <i data-lucide="globe" class="h-4 w-4"></i>
+              EN
+              <i data-lucide="chevron-down" class="h-4 w-4"></i>
+            </button>
+            <div
+              class="absolute right-0 mt-2 w-32 bg-white rounded-lg shadow-lg border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
+              <a href="index.html" class="block px-4 py-2 text-sm text-primary font-medium bg-gray-50">English</a>
+              <a href="index-te.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">తెలుగు</a>
+              <a href="index-hi.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">हिंदी</a>
+            </div>
+          </div>
+        </nav>
+
+        <!-- Mobile Menu Button -->
+        <button id="mobile-menu-btn" class="md:hidden p-2 text-gray-700" aria-label="Toggle menu">
+          <i data-lucide="menu" class="h-6 w-6"></i>
+        </button>
+      </div>
+
+      <!-- Mobile Nav -->
+      <nav id="mobile-menu" class="hidden md:hidden pb-4 space-y-2">
+        <a href="#home" class="block py-2 text-gray-700 hover:text-primary transition font-medium">Home</a>
+        <a href="#about" class="block py-2 text-gray-700 hover:text-primary transition font-medium">About</a>
+        <a href="#services" class="block py-2 text-gray-700 hover:text-primary transition font-medium">Practice
+          Areas</a>
+        <a href="#faq" class="block py-2 text-gray-700 hover:text-primary transition font-medium">FAQ</a>
+        <a href="blog.html" class="block py-2 text-gray-700 hover:text-primary transition font-medium">Blog</a>
+        <a href="feedback.html" class="block py-2 text-gray-700 hover:text-primary transition font-medium">Feedback</a>
+        <a href="#contact" class="block py-2 text-gray-700 hover:text-primary transition font-medium">Contact</a>
+        <div class="flex gap-2 pt-2 border-t border-gray-200">
+          <a href="index.html" class="px-3 py-1 bg-primary text-white rounded text-sm">EN</a>
+          <a href="index-te.html" class="px-3 py-1 bg-gray-100 text-gray-700 rounded text-sm">తెలుగు</a>
+          <a href="index-hi.html" class="px-3 py-1 bg-gray-100 text-gray-700 rounded text-sm">हिंदी</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="pt-20 bg-gradient-to-br from-white via-gray-50 to-blue-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="space-y-6 fade-in">
+          <!-- Free Consultation Badge -->
+          <div
+            class="inline-flex items-center gap-2 bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-medium fade-in fade-in-delay-1">
+            <i data-lucide="check-circle" class="h-4 w-4"></i>
+            Free Initial Consultation Available
+          </div>
+
+          <h1 class="text-4xl md:text-5xl font-serif font-bold text-primary leading-tight fade-in fade-in-delay-2">
+            Committed to Justice.<br />Guided by Integrity.
+          </h1>
+          <p class="text-xl text-gray-600 fade-in fade-in-delay-3">
+            Legal advice you can trust — delivered with clarity, compassion, and confidence.
+          </p>
+          <p class="text-gray-700 leading-relaxed fade-in fade-in-delay-4">
+            Welcome to <span class="font-semibold">Sowjanya Legal Advisors</span>, the practice of Advocate Sowjanya,
+            a passionate and dedicated legal professional offering practical and ethical legal solutions for individuals
+            and businesses.
+          </p>
+          <p class="text-gray-700 leading-relaxed">
+            Whether you are facing a dispute, seeking legal documentation, or need sound legal advice —
+            we stand by your side with expertise and empathy.
+          </p>
+          <div class="flex flex-wrap gap-4 pt-4">
+            <a href="#contact"
+              class="bg-primary text-white px-8 py-3 rounded-md hover:bg-primary-dark transition flex items-center gap-2 shadow-lg hover:shadow-xl">
+              <i data-lucide="message-circle" class="h-5 w-5"></i>
+              Book a Consultation
+            </a>
+            <a href="tel:+916281074891"
+              class="border-2 border-primary text-primary px-8 py-3 rounded-md hover:bg-primary hover:text-white transition flex items-center gap-2">
+              <i data-lucide="phone" class="h-5 w-5"></i>
+              Contact Now
+            </a>
+          </div>
+        </div>
+
+        <div class="flex justify-center fade-in fade-in-delay-3">
+          <div class="relative">
+            <div class="absolute inset-0 bg-gradient-to-br from-primary to-primary-dark rounded-lg transform rotate-3">
+            </div>
+            <img src="assets/IMG-20250915-WA0015.jpg"
+              alt="Advocate Sowjanya - Professional Legal Advisor in Telangana specializing in Consumer Disputes, Civil Law, and Family Matters"
+              class="relative rounded-lg shadow-2xl w-full max-w-md object-cover" style="aspect-ratio: 3/4;" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Stats Section -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16 pt-8 border-t border-gray-200">
+        <div class="text-center">
+          <p class="text-4xl font-bold stat-number">100+</p>
+          <p class="text-gray-600 mt-1">Cases Handled</p>
+        </div>
+        <div class="text-center">
+          <p class="text-4xl font-bold stat-number">5+</p>
+          <p class="text-gray-600 mt-1">Years Experience</p>
+        </div>
+        <div class="text-center">
+          <p class="text-4xl font-bold stat-number">95%</p>
+          <p class="text-gray-600 mt-1">Client Satisfaction</p>
+        </div>
+        <div class="text-center">
+          <p class="text-4xl font-bold stat-number">24hr</p>
+          <p class="text-gray-600 mt-1">Response Time</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-4xl font-serif font-bold text-primary mb-4">About Advocate Sowjanya</h2>
+        <div class="w-24 h-1 bg-gradient-to-r from-primary to-gold mx-auto"></div>
+      </div>
+
+      <div class="max-w-4xl mx-auto space-y-6 text-gray-700 leading-relaxed">
+        <p class="text-lg">
+          Advocate Sowjanya is a qualified legal practitioner with a passion for justice, fairness, and client welfare.
+          Practicing primarily in <span class="font-semibold text-primary">Consumer Disputes, Civil and Property
+            Matters, Family Law,
+            and Legal Documentation</span>, she brings a thoughtful and client-centered approach to every case.
+        </p>
+
+        <div class="bg-gradient-to-r from-gray-50 to-blue-50 border-l-4 border-gold p-6 my-8 rounded-r-lg">
+          <p class="text-lg italic text-gray-800">
+            Her philosophy is simple: <span class="font-semibold">Listen carefully, understand deeply, and act with
+              integrity.</span>
+          </p>
+        </div>
+
+        <p class="text-lg">
+          With experience representing clients before district forums and various legal authorities,
+          Sowjanya is known for her calm demeanor, transparent communication, and genuine care for her clients'
+          concerns.
+        </p>
+
+        <p class="text-lg">
+          She believes that legal guidance should be <span class="font-semibold text-primary">accessible, clear, and
+            empowering</span>,
+          not intimidating or confusing.
+        </p>
+
+        <div class="bg-gradient-to-r from-primary to-primary-dark text-white p-8 rounded-lg my-8 shadow-xl">
+          <p class="text-xl text-center italic font-serif">
+            "Every client deserves to be heard and guided with honesty — not just represented in court,
+            but supported in every step."
+          </p>
+        </div>
+
+        <p class="text-lg">
+          Sowjanya continues to expand her practice, offering both <span class="font-semibold">in-person and online
+            consultations</span> to
+          make legal help available to all across Telangana.
+        </p>
+
+        <div class="grid md:grid-cols-3 gap-6 mt-12">
+          <div
+            class="text-center p-6 bg-gradient-to-br from-gray-50 to-blue-50 rounded-lg border border-gray-100 hover:shadow-lg transition">
+            <i data-lucide="graduation-cap" class="h-12 w-12 text-primary mx-auto mb-4"></i>
+            <h3 class="font-semibold text-lg mb-2 text-primary">Education</h3>
+            <p class="text-gray-600">B.A. LL.B.</p>
+          </div>
+          <div
+            class="text-center p-6 bg-gradient-to-br from-gray-50 to-blue-50 rounded-lg border border-gray-100 hover:shadow-lg transition">
+            <i data-lucide="award" class="h-12 w-12 text-primary mx-auto mb-4"></i>
+            <h3 class="font-semibold text-lg mb-2 text-primary">Member</h3>
+            <p class="text-gray-600">Bar Council of Telangana</p>
+          </div>
+          <div
+            class="text-center p-6 bg-gradient-to-br from-gray-50 to-blue-50 rounded-lg border border-gray-100 hover:shadow-lg transition">
+            <i data-lucide="scale" class="h-12 w-12 text-primary mx-auto mb-4"></i>
+            <h3 class="font-semibold text-lg mb-2 text-primary">Practice</h3>
+            <p class="text-gray-600">District Consumer Disputes Redressal Commission</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-4xl font-serif font-bold text-primary mb-4">Areas of Practice</h2>
+        <div class="w-24 h-1 bg-gradient-to-r from-primary to-gold mx-auto mb-6"></div>
+        <p class="text-lg text-gray-700 max-w-3xl mx-auto">
+          At Sowjanya Legal Advisors, we handle a broad range of legal services tailored to individual and corporate
+          needs.
+          Our goal is to make legal support simple, ethical, and effective.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Service 1 -->
+        <div
+          class="bg-white p-8 rounded-xl shadow-md hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:-translate-y-1">
+          <div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+            <i data-lucide="scale" class="h-8 w-8 text-primary"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-primary mb-3">Civil Law</h3>
+          <p class="text-gray-600 leading-relaxed">Representation and legal advice in civil disputes, recovery suits,
+            injunctions, and other civil matters before courts and tribunals.</p>
+        </div>
+        <!-- Service 2 -->
+        <div
+          class="bg-white p-8 rounded-xl shadow-md hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:-translate-y-1">
+          <div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+            <i data-lucide="shopping-cart" class="h-8 w-8 text-primary"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-primary mb-3">Consumer Disputes</h3>
+          <p class="text-gray-600 leading-relaxed">Helping clients file and defend consumer complaints regarding
+            defective goods, unfair trade practices, or service deficiencies.</p>
+        </div>
+        <!-- Service 3 -->
+        <div
+          class="bg-white p-8 rounded-xl shadow-md hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:-translate-y-1">
+          <div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+            <i data-lucide="users" class="h-8 w-8 text-primary"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-primary mb-3">Family & Matrimonial Matters</h3>
+          <p class="text-gray-600 leading-relaxed">Compassionate guidance in family-related cases including maintenance,
+            divorce, custody, and mutual settlements.</p>
+        </div>
+        <!-- Service 4 -->
+        <div
+          class="bg-white p-8 rounded-xl shadow-md hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:-translate-y-1">
+          <div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+            <i data-lucide="home" class="h-8 w-8 text-primary"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-primary mb-3">Property & Real Estate Law</h3>
+          <p class="text-gray-600 leading-relaxed">End-to-end legal support in property verification, sale deed
+            drafting, registration, and title disputes.</p>
+        </div>
+        <!-- Service 5 -->
+        <div
+          class="bg-white p-8 rounded-xl shadow-md hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:-translate-y-1">
+          <div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+            <i data-lucide="file-text" class="h-8 w-8 text-primary"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-primary mb-3">Legal Opinions & Documentation</h3>
+          <p class="text-gray-600 leading-relaxed">Drafting, reviewing, and notarizing agreements, deeds, affidavits,
+            and other legal instruments — with a focus on accuracy and clarity.</p>
+        </div>
+        <!-- Service 6 -->
+        <div
+          class="bg-white p-8 rounded-xl shadow-md hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:-translate-y-1">
+          <div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+            <i data-lucide="message-square" class="h-8 w-8 text-primary"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-primary mb-3">Legal Advisory & Consultation</h3>
+          <p class="text-gray-600 leading-relaxed">Personalized consultations to help clients understand their legal
+            position, rights, and options before taking action.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us Section -->
+  <section id="why-choose" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-4xl font-serif font-bold text-primary mb-4">Professional Guidance. Personal Care.</h2>
+        <div class="w-24 h-1 bg-gradient-to-r from-primary to-gold mx-auto mb-6"></div>
+        <p class="text-lg text-gray-700 max-w-3xl mx-auto">
+          Choosing the right lawyer is about more than just expertise — it's about trust, transparency, and
+          understanding.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+        <!-- Reason 1 -->
+        <div
+          class="flex items-start space-x-4 p-6 bg-gradient-to-br from-gray-50 to-blue-50 rounded-xl hover:shadow-lg transition border border-gray-100">
+          <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+            <i data-lucide="heart" class="h-6 w-6 text-primary"></i>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold text-primary mb-2">Client-Focused Approach</h3>
+            <p class="text-gray-600">Every case is handled with personal attention and empathy.</p>
+          </div>
+        </div>
+        <!-- Reason 2 -->
+        <div
+          class="flex items-start space-x-4 p-6 bg-gradient-to-br from-gray-50 to-blue-50 rounded-xl hover:shadow-lg transition border border-gray-100">
+          <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+            <i data-lucide="message-circle" class="h-6 w-6 text-primary"></i>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold text-primary mb-2">Clear Communication</h3>
+            <p class="text-gray-600">Legal terms explained in plain language you understand.</p>
+          </div>
+        </div>
+        <!-- Reason 3 -->
+        <div
+          class="flex items-start space-x-4 p-6 bg-gradient-to-br from-gray-50 to-blue-50 rounded-xl hover:shadow-lg transition border border-gray-100">
+          <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+            <i data-lucide="shield" class="h-6 w-6 text-primary"></i>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold text-primary mb-2">Ethical Practice</h3>
+            <p class="text-gray-600">Honesty and confidentiality at every step.</p>
+          </div>
+        </div>
+        <!-- Reason 4 -->
+        <div
+          class="flex items-start space-x-4 p-6 bg-gradient-to-br from-gray-50 to-blue-50 rounded-xl hover:shadow-lg transition border border-gray-100">
+          <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+            <i data-lucide="indian-rupee" class="h-6 w-6 text-primary"></i>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold text-primary mb-2">Affordable Services</h3>
+            <p class="text-gray-600">Fair, transparent fees for all consultations.</p>
+          </div>
+        </div>
+        <!-- Reason 5 -->
+        <div
+          class="flex items-start space-x-4 p-6 bg-gradient-to-br from-gray-50 to-blue-50 rounded-xl hover:shadow-lg transition border border-gray-100">
+          <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+            <i data-lucide="clock" class="h-6 w-6 text-primary"></i>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold text-primary mb-2">Prompt Response</h3>
+            <p class="text-gray-600">Quick turnaround and timely updates on case progress.</p>
+          </div>
+        </div>
+        <!-- Reason 6 -->
+        <div
+          class="flex items-start space-x-4 p-6 bg-gradient-to-br from-gray-50 to-blue-50 rounded-xl hover:shadow-lg transition border border-gray-100">
+          <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+            <i data-lucide="check-circle" class="h-6 w-6 text-primary"></i>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold text-primary mb-2">Proven Results</h3>
+            <p class="text-gray-600">Dedicated to achieving the best possible outcomes.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-gradient-to-r from-primary to-primary-dark text-white p-8 rounded-xl text-center shadow-xl">
+        <p class="text-2xl font-serif italic">
+          "Justice may be complex, but your lawyer should make it simple."
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-4xl font-serif font-bold text-primary mb-4">What Clients Say</h2>
+        <div class="w-24 h-1 bg-gradient-to-r from-primary to-gold mx-auto"></div>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Testimonial 1 -->
+        <div
+          class="bg-white p-8 rounded-xl shadow-md hover:shadow-2xl transition-all duration-300 border border-gray-100">
+          <div class="flex mb-4">
+            <i data-lucide="star" class="h-5 w-5 text-gold fill-current"></i>
+            <i data-lucide="star" class="h-5 w-5 text-gold fill-current"></i>
+            <i data-lucide="star" class="h-5 w-5 text-gold fill-current"></i>
+            <i data-lucide="star" class="h-5 w-5 text-gold fill-current"></i>
+            <i data-lucide="star" class="h-5 w-5 text-gold fill-current"></i>
+          </div>
+          <i data-lucide="quote" class="h-10 w-10 text-primary mb-4 opacity-30"></i>
+          <p class="text-gray-700 leading-relaxed mb-6 italic">
+            "Sowjanya ma'am explained my case very clearly and helped me get justice in a consumer dispute. I truly
+            appreciate her patience and professionalism."
+          </p>
+          <p class="text-primary font-semibold">— Client, Hyderabad</p>
+        </div>
+        <!-- Testimonial 2 -->
+        <div
+          class="bg-white p-8 rounded-xl shadow-md hover:shadow-2xl transition-all duration-300 border border-gray-100">
+          <div class="flex mb-4">
+            <i data-lucide="star" class="h-5 w-5 text-gold fill-current"></i>
+            <i data-lucide="star" class="h-5 w-5 text-gold fill-current"></i>
+            <i data-lucide="star" class="h-5 w-5 text-gold fill-current"></i>
+            <i data-lucide="star" class="h-5 w-5 text-gold fill-current"></i>
+            <i data-lucide="star" class="h-5 w-5 text-gold fill-current"></i>
+          </div>
+          <i data-lucide="quote" class="h-10 w-10 text-primary mb-4 opacity-30"></i>
+          <p class="text-gray-700 leading-relaxed mb-6 italic">
+            "Professional, approachable, and trustworthy. She made legal processes much easier to understand."
+          </p>
+          <p class="text-primary font-semibold">— Client, Mancherial</p>
+        </div>
+        <!-- Testimonial 3 -->
+        <div
+          class="bg-white p-8 rounded-xl shadow-md hover:shadow-2xl transition-all duration-300 border border-gray-100">
+          <div class="flex mb-4">
+            <i data-lucide="star" class="h-5 w-5 text-gold fill-current"></i>
+            <i data-lucide="star" class="h-5 w-5 text-gold fill-current"></i>
+            <i data-lucide="star" class="h-5 w-5 text-gold fill-current"></i>
+            <i data-lucide="star" class="h-5 w-5 text-gold fill-current"></i>
+            <i data-lucide="star" class="h-5 w-5 text-gold fill-current"></i>
+          </div>
+          <i data-lucide="quote" class="h-10 w-10 text-primary mb-4 opacity-30"></i>
+          <p class="text-gray-700 leading-relaxed mb-6 italic">
+            "I felt confident throughout my case — she's honest, calm, and dedicated."
+          </p>
+          <p class="text-primary font-semibold">— Client, Khammam</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq" class="py-20 bg-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-4xl font-serif font-bold text-primary mb-4">Frequently Asked Questions</h2>
+        <div class="w-24 h-1 bg-gradient-to-r from-primary to-gold mx-auto mb-6"></div>
+        <p class="text-lg text-gray-700">Common questions about our legal services</p>
+      </div>
+
+      <div class="space-y-4">
+        <!-- FAQ 1 -->
+        <div class="border border-gray-200 rounded-xl overflow-hidden">
+          <button
+            class="faq-btn w-full flex items-center justify-between p-6 bg-gray-50 hover:bg-gray-100 transition text-left">
+            <span class="font-semibold text-primary">How do I schedule a consultation?</span>
+            <i data-lucide="chevron-down" class="h-5 w-5 text-primary faq-icon transition-transform"></i>
+          </button>
+          <div class="faq-answer">
+            <p class="p-6 pt-0 text-gray-600">
+              You can schedule a consultation by filling out the contact form on this website, calling us at +91
+              6281074891, or sending a WhatsApp message. We offer both in-person and online consultations for your
+              convenience. Initial consultations are free!
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="border border-gray-200 rounded-xl overflow-hidden">
+          <button
+            class="faq-btn w-full flex items-center justify-between p-6 bg-gray-50 hover:bg-gray-100 transition text-left">
+            <span class="font-semibold text-primary">What areas of law do you specialize in?</span>
+            <i data-lucide="chevron-down" class="h-5 w-5 text-primary faq-icon transition-transform"></i>
+          </button>
+          <div class="faq-answer">
+            <p class="p-6 pt-0 text-gray-600">
+              We specialize in Consumer Disputes, Civil Law, Family & Matrimonial Matters, Property & Real Estate Law,
+              Legal Documentation, and General Legal Advisory services. Our practice is focused on providing practical
+              solutions for individuals and businesses.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="border border-gray-200 rounded-xl overflow-hidden">
+          <button
+            class="faq-btn w-full flex items-center justify-between p-6 bg-gray-50 hover:bg-gray-100 transition text-left">
+            <span class="font-semibold text-primary">How much do your services cost?</span>
+            <i data-lucide="chevron-down" class="h-5 w-5 text-primary faq-icon transition-transform"></i>
+          </button>
+          <div class="faq-answer">
+            <p class="p-6 pt-0 text-gray-600">
+              Our fees are transparent and competitive. We offer a free initial consultation to understand your case.
+              After that, fees depend on the complexity and type of legal matter. We believe in fair pricing and will
+              provide a clear fee structure upfront before proceeding.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="border border-gray-200 rounded-xl overflow-hidden">
+          <button
+            class="faq-btn w-full flex items-center justify-between p-6 bg-gray-50 hover:bg-gray-100 transition text-left">
+            <span class="font-semibold text-primary">Do you offer online consultations?</span>
+            <i data-lucide="chevron-down" class="h-5 w-5 text-primary faq-icon transition-transform"></i>
+          </button>
+          <div class="faq-answer">
+            <p class="p-6 pt-0 text-gray-600">
+              Yes! We offer online consultations via video call or phone for clients who cannot visit in person. This is
+              especially convenient for clients from other cities or those with busy schedules. Simply contact us to
+              schedule an online session.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="border border-gray-200 rounded-xl overflow-hidden">
+          <button
+            class="faq-btn w-full flex items-center justify-between p-6 bg-gray-50 hover:bg-gray-100 transition text-left">
+            <span class="font-semibold text-primary">How long does it take to resolve a consumer dispute case?</span>
+            <i data-lucide="chevron-down" class="h-5 w-5 text-primary faq-icon transition-transform"></i>
+          </button>
+          <div class="faq-answer">
+            <p class="p-6 pt-0 text-gray-600">
+              The timeline varies depending on the complexity of the case and the forum. Simple cases may be resolved in
+              3-6 months, while more complex matters may take longer. We keep you informed at every stage and work
+              diligently to achieve the fastest possible resolution.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-4xl font-serif font-bold text-primary mb-4">Get in Touch</h2>
+        <div class="w-24 h-1 bg-gradient-to-r from-primary to-gold mx-auto mb-6"></div>
+        <p class="text-lg text-gray-700 max-w-3xl mx-auto">
+          Have a legal question or need guidance on a case? We're here to help.
+          Contact Advocate Sowjanya for clear, confidential, and reliable legal assistance.
+        </p>
+      </div>
+
+      <div class="grid lg:grid-cols-2 gap-12">
+        <div class="space-y-6">
+          <div class="flex items-start space-x-4 p-4 bg-white rounded-xl shadow-sm">
+            <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+              <i data-lucide="map-pin" class="h-6 w-6 text-primary"></i>
+            </div>
+            <div>
+              <h3 class="font-semibold text-lg text-primary mb-1">Office</h3>
+              <p class="text-gray-600">Available for in-person & online consultations across Telangana</p>
+            </div>
+          </div>
+
+          <div class="flex items-start space-x-4 p-4 bg-white rounded-xl shadow-sm">
+            <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+              <i data-lucide="mail" class="h-6 w-6 text-primary"></i>
+            </div>
+            <div>
+              <h3 class="font-semibold text-lg text-primary mb-1">Email</h3>
+              <a href="mailto:2psowjanya@gmail.com" class="text-gray-600 hover:text-primary transition">
+                2psowjanya@gmail.com
+              </a>
+            </div>
+          </div>
+
+          <div class="flex items-start space-x-4 p-4 bg-white rounded-xl shadow-sm">
+            <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+              <i data-lucide="phone" class="h-6 w-6 text-primary"></i>
+            </div>
+            <div>
+              <h3 class="font-semibold text-lg text-primary mb-1">Phone / WhatsApp</h3>
+              <a href="tel:+916281074891" class="text-gray-600 hover:text-primary transition">
+                +91 6281074891
+              </a>
+            </div>
+          </div>
+
+          <div class="flex items-start space-x-4 p-4 bg-white rounded-xl shadow-sm">
+            <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+              <i data-lucide="clock" class="h-6 w-6 text-primary"></i>
+            </div>
+            <div>
+              <h3 class="font-semibold text-lg text-primary mb-1">Working Hours</h3>
+              <p class="text-gray-600">Monday to Saturday, 10 AM – 6 PM</p>
+            </div>
+          </div>
+
+          <!-- Google Map Embed -->
+          <div class="rounded-xl overflow-hidden shadow-lg h-64">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d243647.3170845937!2d78.24323105!3d17.412608099999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb99daeaebd2c7%3A0xae93b78392bafbc2!2sHyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1704412800000!5m2!1sen!2sin"
+              width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade" title="Location Map - Hyderabad, Telangana">
+            </iframe>
+          </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-xl shadow-lg">
+          <h3 class="text-xl font-semibold text-primary mb-6">Send Us a Message</h3>
+          <form id="contact-form" class="space-y-4">
+            <div>
+              <label for="name" class="block text-sm font-medium text-gray-700 mb-1">
+                Name *
+              </label>
+              <input type="text" id="name" name="name" required
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition"
+                placeholder="Your full name" />
+            </div>
+
+            <div>
+              <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">
+                Phone *
+              </label>
+              <input type="tel" id="phone" name="phone" required
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition"
+                placeholder="Your phone number" />
+            </div>
+
+            <div>
+              <label for="email" class="block text-sm font-medium text-gray-700 mb-1">
+                Email *
+              </label>
+              <input type="email" id="email" name="email" required
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition"
+                placeholder="your@email.com" />
+            </div>
+
+            <div>
+              <label for="message" class="block text-sm font-medium text-gray-700 mb-1">
+                Message *
+              </label>
+              <textarea id="message" name="message" required rows="4"
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition resize-none"
+                placeholder="Briefly describe your legal matter..."></textarea>
+            </div>
+
+            <button type="submit"
+              class="w-full bg-gradient-to-r from-primary to-primary-dark text-white py-4 rounded-lg hover:shadow-xl transition font-semibold flex items-center justify-center gap-2">
+              <i data-lucide="send" class="h-5 w-5"></i>
+              Send Enquiry via WhatsApp
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gradient-to-r from-primary to-primary-dark text-white py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-3 gap-8 mb-8">
+        <!-- Brand -->
+        <div>
+          <div class="flex items-center space-x-3 mb-4">
+            <i data-lucide="scale" class="h-8 w-8"></i>
+            <div>
+              <h3 class="text-xl font-serif font-bold">Sowjanya Legal Advisors</h3>
+              <p class="text-sm text-gray-300">Advocate Sowjanya</p>
+            </div>
+          </div>
+          <p class="text-gray-300 text-sm">
+            Committed to Justice. Guided by Integrity. Providing trusted legal services across Telangana.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="font-semibold mb-4">Quick Links</h4>
+          <ul class="space-y-2 text-gray-300">
+            <li><a href="#about" class="hover:text-white transition">About Us</a></li>
+            <li><a href="#services" class="hover:text-white transition">Practice Areas</a></li>
+            <li><a href="#faq" class="hover:text-white transition">FAQ</a></li>
+            <li><a href="#contact" class="hover:text-white transition">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Social Links -->
+        <div>
+          <h4 class="font-semibold mb-4">Connect With Us</h4>
+          <div class="flex space-x-4">
+            <a href="https://wa.me/916281074891" target="_blank" rel="noopener"
+              class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition"
+              aria-label="WhatsApp">
+              <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+              </svg>
+            </a>
+            <a href="mailto:2psowjanya@gmail.com"
+              class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition"
+              aria-label="Email">
+              <i data-lucide="mail" class="h-5 w-5"></i>
+            </a>
+            <a href="tel:+916281074891"
+              class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition"
+              aria-label="Phone">
+              <i data-lucide="phone" class="h-5 w-5"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="border-t border-white/20 pt-8 text-center space-y-4">
+        <p class="text-sm text-gray-300">
+          © 2025 Sowjanya Legal Advisors. All Rights Reserved.
+        </p>
+        <p class="text-xs text-gray-400 max-w-3xl mx-auto leading-relaxed">
+          The information on this website is provided for general informational purposes only and does not constitute
+          legal advice.
+          Visiting this site or contacting through it does not create an advocate-client relationship.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/916281074891?text=Hello%2C%20I%20would%20like%20to%20consult%20about%20a%20legal%20matter."
+    target="_blank" rel="noopener"
+    class="whatsapp-btn fixed bottom-6 right-6 z-50 w-16 h-16 bg-[#25D366] rounded-full flex items-center justify-center shadow-lg hover:shadow-2xl transition-all"
+    aria-label="Chat on WhatsApp">
+    <svg class="h-8 w-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+      <path
+        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+    </svg>
+  </a>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top"
+    class="back-to-top fixed bottom-6 left-6 z-50 w-12 h-12 bg-primary rounded-full flex items-center justify-center shadow-lg hover:shadow-xl hover:bg-primary-dark transition-all"
+    aria-label="Back to top">
+    <i data-lucide="chevron-up" class="h-6 w-6 text-white"></i>
+  </button>
+
+  <!-- JavaScript -->
+  <script>
+    // Initialize Lucide Icons
+    lucide.createIcons();
+
+    // Mobile Menu Toggle
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Close mobile menu when a link is clicked
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      });
+    });
+
+    // Contact Form - WhatsApp Integration
+    const contactForm = document.getElementById('contact-form');
+    contactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      const name = document.getElementById('name').value;
+      const phone = document.getElementById('phone').value;
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message').value;
+
+      const whatsappMessage = `Hello, I would like to consult about a legal matter.%0A%0AName: ${encodeURIComponent(name)}%0APhone: ${encodeURIComponent(phone)}%0AEmail: ${encodeURIComponent(email)}%0AMessage: ${encodeURIComponent(message)}`;
+      window.open(`https://wa.me/916281074891?text=${whatsappMessage}`, '_blank');
+    });
+
+    // Back to Top Button
+    const backToTopBtn = document.getElementById('back-to-top');
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 500) {
+        backToTopBtn.classList.add('visible');
+      } else {
+        backToTopBtn.classList.remove('visible');
+      }
+    });
+
+    backToTopBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // FAQ Accordion
+    const faqBtns = document.querySelectorAll('.faq-btn');
+
+    faqBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const answer = btn.nextElementSibling;
+        const icon = btn.querySelector('.faq-icon');
+
+        // Close other FAQs
+        faqBtns.forEach(otherBtn => {
+          if (otherBtn !== btn) {
+            otherBtn.nextElementSibling.classList.remove('open');
+            otherBtn.querySelector('.faq-icon').style.transform = 'rotate(0deg)';
+          }
+        });
+
+        // Toggle current FAQ
+        answer.classList.toggle('open');
+        icon.style.transform = answer.classList.contains('open') ? 'rotate(180deg)' : 'rotate(0deg)';
+      });
+    });
+
+    // Intersection Observer for fade-in animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('fade-in');
+        }
+      });
+    }, observerOptions);
+
+    // Observe sections for animation
+    document.querySelectorAll('section').forEach(section => {
+      observer.observe(section);
+    });
+  </script>
+
+</body>
+
+</html>
